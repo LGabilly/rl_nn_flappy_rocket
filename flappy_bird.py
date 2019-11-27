@@ -82,9 +82,8 @@ def generation_exectuion(genomes, config):
 
             output = nets[x].activate(
                 (
-                    bird.y,
-                    abs(bird.y - pipes[pipe_ind].height),
-                    abs(bird.y - pipes[pipe_ind].bottom),
+                    bird.y - pipes[pipe_ind].height,
+                    bird.y - pipes[pipe_ind].bottom,
                 )
             )
 
@@ -115,7 +114,7 @@ def generation_exectuion(genomes, config):
             score += 1
             for g in ge:
                 g.fitness += 5
-            pipes.append(Pipe(600))
+            pipes.append(Pipe(500))
 
         for r in rem:
             pipes.remove(r)
