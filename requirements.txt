@@ -1,0 +1,7 @@
+appdirs==1.4.3
+attrs==19.2.0
+black==19.3b0
+Click==7.0
+neat-python==0.92
+pygame==1.9.6
+toml==0.10.0
